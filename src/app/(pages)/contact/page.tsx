@@ -30,9 +30,7 @@ export default function Contact () {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7642.431109095239!2d-49.25802506329394!3d-16.71609317818158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1b45cc742f5%3A0x3541e3297a0952e4!2sResidencial%20Porto%20Ludovico!5e0!3m2!1sen!2sbr!4v1726803413569!5m2!1sen!2sbr" 
                     width="100%" 
                     height="500" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                    loading="lazy">
                     </iframe>
                 </div>
             </section>
