@@ -17,7 +17,7 @@ export default function Office() {
         <div className="absolute top-[1rem] left-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
         <div className="absolute top-[1rem] right-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
 
-        <div className="cell:flex-row flex flex-col items-start justify-between gap-20 w-full">
+        <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-20 w-full">
           <div className="flex flex-col cell:items-start items-center justify-center gap-10 w-full">
             <div className="cell:block flex flex-col items-center">
               <span className="text-2xl font-bold text-brown400 uppercase">quem somos</span>
@@ -35,13 +35,13 @@ export default function Office() {
             </p>
           </div>
 
-          <img src="3.png" alt="mesa do tribunal" className="object-cover w-auto h-auto"/>
+          <img src="3.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
         </div>
 
-        <div className="cell:flex-row flex flex-col items-center justify-between gap-12 w-full">
-          <img src="4.png" alt="mesa do tribunal" className="object-cover w-auto h-auto"/>
+        <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-12 w-full">
+          <img src="4.png" alt="mesa do tribunal" className="object-cover w-[40%] h-auto"/>
 
-          <div className="flex flex-col cell:items-start items-end justify-center gap-12">
+          <div className="flex flex-col cell:items-start items-center justify-center gap-12">
             <div className="cell:block flex flex-col items-center">
               <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
