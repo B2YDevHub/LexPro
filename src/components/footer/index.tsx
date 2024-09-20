@@ -1,7 +1,3 @@
-import { FaLocationDot, FaYoutube } from "react-icons/fa6";
-import { FaPhoneAlt, FaLinkedin, FaInstagram  } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-
 export function Footer () {
     return (
         <div className="bg-gray900 w-all py-6 px-8 tablet:px-[8.5rem] flex items-center justify-between">

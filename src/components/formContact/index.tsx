@@ -7,12 +7,11 @@ import { TextArea } from "../textArea";
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup';
 import { toast } from "sonner";
-import { useState } from "react";
 
 const formSchema = yup.object({
     name: yup.string().required('Informe o seu nome'),
     email: yup.string().email().required('Informe o seu email'),
-    phone: yup.number().integer().min(8).required('Informe o seu telefone'),
+    phone: yup.number().integer().min(8, 'Tem que haver no minimo 8 caracteres').required('Informe o seu telefone'),
     subject: yup.string().required('Informe o assunto'),
     message: yup.string().required('Informe uma mensagem'),
   });
@@ -47,7 +46,7 @@ export function FormContact () {
 
             <div className="cell:flex-row flex flex-col items-center justify-between gap-[1rem] w-full">
                 <div className="space-y-1 w-full">
-                  <Input type="text" {...register('phone')} placeholder="Telefone/Whatsapp"/>
+                  <Input type="number" {...register('phone')} placeholder="Telefone/Whatsapp"/>
                   {errors.phone?.message && <p className={`text-sm text-brown400`}>{errors.phone?.message}</p>}  
                 </div>
 
@@ -68,7 +67,7 @@ export function FormContact () {
             </div>
           </div>
           
-          <Buttom type="submit" variant="PRIMARY" title="enviar mensagem"/>
+          <Buttom disabled={isSubmitting} className="disabled:cursor-not-allowed opacity-70" type="submit" variant="PRIMARY" title="enviar mensagem"/>
         </form>
     )
 }

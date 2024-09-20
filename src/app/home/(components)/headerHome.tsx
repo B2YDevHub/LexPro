@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 interface HeaderHomeProps {
     title: string;
     subTitle: string

@@ -1,6 +1,6 @@
 'use client'
 
-import { ComponentProps, MouseEvent, ReactElement, useCallback, useEffect, useRef, useState } from "react";
+import { ComponentProps, MouseEvent, ReactElement, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 interface CarouselProps extends ComponentProps<'div'> {
@@ -29,7 +29,7 @@ export function Carousel ({children, ...props}: CarouselProps) {
     }
   };
 
-  const handleRightClick = useCallback((e: MouseEvent<HTMLButtonElement>) => {
+  const handleRightClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
   
     if(carousel.current) {
@@ -47,7 +47,7 @@ export function Carousel ({children, ...props}: CarouselProps) {
 
       setBallsState(Math.round(width / carousel.current.offsetWidth))
     }
-  }, []) 
+  }
 
   setInterval(function() {
     if(carousel.current) {

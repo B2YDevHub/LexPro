@@ -1,10 +1,3 @@
-// import { Buttom } from "@/components/buttom";
-// import { HeaderHome } from "./(components)/headerHome";
-// // import { Card } from "./(components)/card";
-// import { SvgPerson } from "./(components)/svg/svgPerson";
-// import { SvgList } from "./(components)/svg/svgList";
-// import { SvgDocument } from "./(components)/svg/svgDocument";
-// import { Tag } from "./(components)/tag";
 import { Tag } from "@/app/home/(components)/tag";
 import { HeaderHome } from "../../home/(components)/headerHome";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";

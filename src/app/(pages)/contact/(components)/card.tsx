@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Buttom } from '@/components/buttom';
 
 interface CardProps {
     title: string;
