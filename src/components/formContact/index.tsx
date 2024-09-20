@@ -27,7 +27,7 @@ export function FormContact () {
       }
 
     return (
-        <form  className="flex flex-col justify-center bg-gray700 p-14 gap-6 w-full">
+        <form  className="flex flex-col justify-center bg-gray700 p-14 gap-6 w-full rounded-[1.25rem]">
 
           <h1 className="text-2xl text-brown400 font-bold uppercase">Formulário de Contato</h1>
   

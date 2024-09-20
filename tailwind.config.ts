@@ -34,6 +34,9 @@ const config: Config = {
     },
     boxShadow: {
       "card": "0px 10px 40px 0px rgba(0, 0, 0, 0.25)"
+    },
+    borderColor: {
+      "zinc1": "#393939"
     }
   },
   plugins: [],
