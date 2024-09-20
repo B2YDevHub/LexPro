@@ -49,7 +49,23 @@ export function Carousel ({children, ...props}: CarouselProps) {
     }
   }, []) 
 
+  setInterval(function() {
+    if(carousel.current) {
+      const width = carousel.current.scrollLeft += carousel.current.offsetWidth 
+      const index =  Math.round(width / carousel.current.offsetWidth)
+  
+      if(index > children.props.children.length - 1) {
+        setBallsState(0)
 
+        if(ballsState == 0) {
+          carousel.current.scrollLeft = 0
+        }
+        return
+      }
+
+      setBallsState(Math.round(width / carousel.current.offsetWidth))
+    }
+  }, 5000)
 
   return (
     <div {...props} className="flex flex-col items-center justify-center gap-8 py-12 bg-brown400 w-full rounded-lg relative">

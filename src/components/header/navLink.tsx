@@ -29,7 +29,8 @@ export function NavLink ({side, align}: NavLinkProps) {
             Contato
           </Link>
         </nav>
-        <DropdownMenu.Root>
+
+        <DropdownMenu.Root modal={false}>
           <DropdownMenu.Trigger className="tablet:hidden" asChild>
             <button className="text-white">
               <RxHamburgerMenu className="size-6"/>

@@ -10,7 +10,7 @@ interface CardProps {
 
 export function Card ({ title, subTitle, svgChildren, children }: CardProps) {
     return (
-        <div className='flex flex-col h-[22.5rem] w-full justify-center max-w-[58rem] rounded-[.63rem] p-[1.9rem] shadow-card bg-gradient-to-tl from-gray600 from-100% to-gray700'>
+        <div className='flex flex-col h-[22.5rem] w-full justify-center max-w-[58rem] rounded-[.63rem] p-[1.9rem] shadow-cardHome bg-gradient-to-tl from-gray600 from-100% to-gray700'>
             <div className='flex w-full flex-col items-start gap-5'>
                 <div className='flex flex-col items-start gap-4'>
                     {svgChildren}
