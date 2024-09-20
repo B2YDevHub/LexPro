@@ -14,14 +14,14 @@ export default function Contact () {
                 segurança jurídica de sua empresa. Sua jornada para o sucesso começa aqui.
               </p>
               
-              <div className="cell:flex-row flex flex-col justify-between items-center gap-8 w-full mb-[14%]">
+              <div className="cell:flex-row flex flex-col justify-between items-center gap-8 w-full mb-[14%] max-[1700px]:mb-[16%] max-[1000px]:mb-[20%] max-[700px]:mb-[30%] max-[600px]:mb-[35%]">
                 <Card svgChildren={<FaLocationDot className="size-12 fill-brown400"/>} title="Endereço" subTitle="Rua 987, St. Pedro, Goiânia-GO."/>
                 <Card svgChildren={<FaPhoneAlt className="size-12 fill-brown400"/>} title="Telefone" subTitle="+55 (62) 9876-54321"/>
                 <Card svgChildren={<MdEmail className="size-12 fill-brown400"/>} title="E-mail" subTitle="contato@lexpro.adv.br"/>
               </div>
             </section>
             <section className="gap-[8rem] flex flex-col items-center justify-center bg-gray900">
-                <div className="mt-[-14rem]">
+                <div className="px-28 tablet:px-[8.5rem] mt-[-14rem] max-[600px]:w-full">
                   <FormContact />
                 </div>
 
