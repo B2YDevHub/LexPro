@@ -39,7 +39,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 w-full cell:block flex flex-col items-center justify-center px-8 tablet:px-[8.5rem] bg-gray600">
+      <section className="py-12 w-full cell:block flex flex-col items-center justify-center px-8 tablet:px-[8.5rem] bg-gray600 relative">
+        <div className="absolute top-[5rem] left-[-15rem] w-[30rem] h-[30rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
         <HeaderHome title="Atuação" subTitle="áreas de"/>
 
         <div className="cell:flex-row flex flex-col w-full items-center justify-between mt-20 gap-[1.87rem]">
