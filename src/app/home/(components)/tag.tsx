@@ -1,4 +1,4 @@
-import { SvgChecked } from "./svg/Cheked";
+import { SvgChecked } from "../../../../public/svg/Cheked";
 
 interface TagProps {
     title: string;

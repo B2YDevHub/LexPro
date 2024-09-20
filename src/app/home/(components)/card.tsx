@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { SvgPerson } from './svg/svgPerson'
 import { Buttom } from '@/components/buttom';
 
 interface CardProps {

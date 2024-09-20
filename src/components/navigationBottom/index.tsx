@@ -9,7 +9,7 @@ export function NavigationBottom () {
   // console.log(heigth)
   // useEffect(() => {setHeigth(window.innerHeight)}, [window.innerHeight])
   return (
-    <div className={`w-full ${1 >= 1000 ? 'flex' : 'hidden'} justify-between items-center bg-gray800 h-[11.33rem] px-8 tablet:px-[8.5rem]`}>
+    <div className={`w-full ${1000 >= 1000 ? 'flex' : 'hidden'} justify-between items-center bg-gray800 h-[11.33rem] px-8 tablet:px-[8.5rem]`}>
       <img
         src='/logoV.png'
         className="w-[8.5rem]"
