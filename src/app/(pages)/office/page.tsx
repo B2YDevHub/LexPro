@@ -13,31 +13,6 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 export default function Office() {
   return (
     <div>
-      <section className="cell:flex-row py-20 px-8 tablet:px-[8.5rem] gap-10 flex flex-col items-center justify-between bg-gray800  bg-no-repeat bg-cover">
-        <div className="cell:block flex flex-col items-center space-y-[2.125rem]">
-
-          <h1 className="text-5xl text-white content-start flex justify-end cell:text-start text-center items-center content font-semibold gap-2 before:bg-brown400 before:w-2 cell:before:h-24 before:mr-3 before:flex">
-            Sua Empresa protegida,  crescimento garantido!
-          </h1>
-
-          <p className="cell:text-start text-center text-brown400 text-[1.25rem] font-medium font-inter">
-            Alavanque seus negócios com nossa expertise jurídica <br />
-            sob medida.Simplificamos a conformidade legal para <br />
-            que você possa focar no crescimento.
-          
-          </p>
-
-          {/* <Buttom variant="PRIMARY" title="Nossos Serviços"/> */}
-        </div>
-        <div className="cell:block flex flex-col items-center cell:pl-0 pl-14 w-full cell:w-[34rem] h-[32rem] relative">
-          <div className="flex h-[10rem] w-[10rem] flex-col items-center justify-start rounded absolute bottom-0 px-3 left-[-1rem] cell:left-[-4rem] bg-gradient-to-br from-brown400  via-brown500 via-70% to-brown300 to-100%">
-            <h1 className="text-[5.6rem] h-[7rem] text-white font-light">20</h1>
-            <span className="text-center text-brown300 text-sm font-bold uppercase">anos de experiência</span>
-          </div>
-          <img className="object-cover h-[32rem] w-full" src="1.png" alt="Imagem de um advogado sorridente" />
-        </div>
-      </section>
-
       <section className="py-20 px-8 tablet:px-[8.5rem] gap-[8rem] flex flex-col items-center justify-between bg-gray600 relative">
         <div className="absolute top-[1rem] left-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
         <div className="absolute top-[1rem] right-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
@@ -60,13 +35,13 @@ export default function Office() {
             </p>
           </div>
 
-          <img src="3.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+          <img src="3.png" alt="mesa do tribunal" className="object-cover w-auto h-auto"/>
         </div>
 
-        <div className="cell:flex-row flex flex-col items-start justify-between gap-12 w-full">
-          <img src="4.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+        <div className="cell:flex-row flex flex-col items-center justify-between gap-12 w-full">
+          <img src="4.png" alt="mesa do tribunal" className="object-cover w-auto h-auto"/>
 
-          <div className="flex flex-col cell:items-start items-center justify-center gap-12 w-full">
+          <div className="flex flex-col cell:items-start items-end justify-center gap-12">
             <div className="cell:block flex flex-col items-center">
               <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
