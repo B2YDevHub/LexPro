@@ -36,8 +36,7 @@ export default function Office() {
           <img className="object-cover h-[32rem] w-full" src="1.png" alt="Imagem de um advogado sorridente" />
         </div>
       </section>
-      <div className="nav">
-        <h1>Office</h1>
+      <section>
         <div className="nav-info 1">
           <div className="flex flex-col cell:items-start items-center justify-center  gap-12">
             <div className="cell:block flex flex-col items-center">
@@ -79,90 +78,88 @@ export default function Office() {
             <Tag title="Especialização Profunda" /> */}
             </div>
           </div>
-          {/* 
-        <Buttom title="fale com um especialista" variant="PRIMARY" /> */}
-          <section className="py-12 px-8 tablet:px-[8.5rem] gap-12 flex flex-col items-center justify-center bg-[url('/bgImage2.png')] bg-no-repeat bg-cover">
-            <HeaderHome title="Profissionais" subTitle="conheça nossos" />
-
-            <div className="flex cell:flex-row flex-col items-center justify-between gap-[1.875rem] w-full">
-
-              <div className="flex flex-col items-center justify-center gap-9 flex-1">
-                <img src="dr1.png" alt="Foto de um advogado" className="object-cover w-full" />
-
-                <div className="flex flex-col items-center justify-center">
-                  <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Mário Sérgio</h2>
-                  <span className="text-base text-gray500">Direito Trabalhista</span>
-                </div>
-
-                <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] w-full">
-                  <a href="">
-                    <FaWhatsapp className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaInstagram className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaLinkedin className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaFacebook className="size-6" />
-                  </a>
-                </nav>
-              </div>
-
-              <div className="flex flex-col items-center justify-center gap-9 flex-1">
-                <img src="dr2.png" alt="Foto de um advogado" className="object-cover w-full" />
-
-                <div className="flex flex-col items-center justify-center">
-                  <h2 className="text-[1.75rem] text-brown400 font-semibold">Dra. Anna Cruise</h2>
-                  <span className="text-base text-gray500">Direito Previdenciário</span>
-                </div>
-
-                <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
-                  <a href="">
-                    <FaWhatsapp className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaInstagram className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaLinkedin className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaFacebook className="size-6" />
-                  </a>
-                </nav>
-              </div>
-
-              <div className="flex flex-col items-center justify-center gap-9 flex-1">
-                <img src="dr3.png" alt="Foto de um advogado" className="object-cover w-full" />
-
-                <div className="flex flex-col items-center justify-center">
-                  <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Nicole Sanches</h2>
-                  <span className="text-base text-gray500">Direito Empresarial</span>
-                </div>
-
-                <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
-                  <a href="">
-                    <FaWhatsapp className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaInstagram className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaLinkedin className="size-6" />
-                  </a>
-                  <a href="">
-                    <FaFacebook className="size-6" />
-                  </a>
-                </nav>
-              </div>
-
-            </div>
-          </section>
         </div>
-      </div>
-    </div>
+      </section>
+          
+      <section className="py-12 px-8 tablet:px-[8.5rem] gap-12 flex flex-col items-center justify-center bg-[url('/bgImage2.png')] bg-no-repeat bg-cover">
+        <HeaderHome title="Profissionais" subTitle="conheça nossos" />
 
+        <div className="flex cell:flex-row flex-col items-center justify-between gap-[1.875rem] w-full">
+
+          <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr1.png" alt="Foto de um advogado" className="object-cover w-full" />
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Mário Sérgio</h2>
+              <span className="text-base text-gray500">Direito Trabalhista</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] w-full">
+              <a href="">
+                <FaWhatsapp className="size-6" />
+              </a>
+              <a href="">
+                <FaInstagram className="size-6" />
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6" />
+              </a>
+              <a href="">
+                <FaFacebook className="size-6" />
+              </a>
+            </nav>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr2.png" alt="Foto de um advogado" className="object-cover w-full" />
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dra. Anna Cruise</h2>
+              <span className="text-base text-gray500">Direito Previdenciário</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
+              <a href="">
+                <FaWhatsapp className="size-6" />
+              </a>
+              <a href="">
+                <FaInstagram className="size-6" />
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6" />
+              </a>
+              <a href="">
+                <FaFacebook className="size-6" />
+              </a>
+            </nav>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr3.png" alt="Foto de um advogado" className="object-cover w-full" />
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Nicole Sanches</h2>
+              <span className="text-base text-gray500">Direito Empresarial</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
+              <a href="">
+                <FaWhatsapp className="size-6" />
+              </a>
+              <a href="">
+                <FaInstagram className="size-6" />
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6" />
+              </a>
+              <a href="">
+                <FaFacebook className="size-6" />
+              </a>
+            </nav>
+          </div>
+
+        </div>
+      </section>
+    </div>
   )
 }
