@@ -39,31 +39,33 @@ export default function Office() {
         </div>
 
         <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-12 w-full">
-          <img src="4.png" alt="mesa do tribunal" className="object-cover w-[40%] h-auto"/>
+          <img src="4.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+          
+          <div className="flex justify-end w-full">
+            <div className="flex flex-col cell:items-start items-center justify-center gap-12">
+              <div className="cell:block flex flex-col items-center">
+                <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
+                <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
+              </div>
 
-          <div className="flex flex-col cell:items-start items-center justify-center gap-12">
-            <div className="cell:block flex flex-col items-center">
-              <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
-              <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
-            </div>
+              <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
+                A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender
+                às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização
+                em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada
+                de crescimento e sucesso de seus clientes.
+              </p>
 
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
-              A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender
-              às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização
-              em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada
-              de crescimento e sucesso de seus clientes.
-            </p>
+              <div className="flex flex-col items-center cell:items-start gap-6">
+                <span className="text-2xl font-bold text-brown400 uppercase relative">nossos Diferenciais:</span>
 
-            <div className="flex flex-col items-center cell:items-start gap-6">
-              <span className="text-2xl font-bold text-brown400 uppercase relative">nossos Diferenciais:</span>
-
-              <div className="flex flex-wrap justify-center cell:justify-start gap-6 max-w-[50rem]">
-                <Tag title="Especialização Profunda" />
-                <Tag title="Especialização Profunda" />
-                <Tag title="Especialização Profunda" />
-                <Tag title="Especialização Profunda" />
-                <Tag title="Especialização Profunda" />
-                <Tag title="Especialização Profunda" />
+                <div className="flex flex-wrap justify-center cell:justify-start gap-6 max-w-[50rem]">
+                  <Tag title="Especialização Profunda" />
+                  <Tag title="Especialização Profunda" />
+                  <Tag title="Especialização Profunda" />
+                  <Tag title="Especialização Profunda" />
+                  <Tag title="Especialização Profunda" />
+                  <Tag title="Especialização Profunda" />
+                </div>
               </div>
             </div>
           </div>
