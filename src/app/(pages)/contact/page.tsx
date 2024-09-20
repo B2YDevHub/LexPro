@@ -7,7 +7,7 @@ import { FormContact } from "@/components/formContact";
 export default function Contact () {
     return (
         <div>
-            <section className="py-20 px-28 tablet:px-[8.5rem] gap-[8rem] flex flex-col items-center justify-between bg-gray600">
+            <section className="py-20 px-8 tablet:px-[8.5rem] gap-[8rem] flex flex-col items-center justify-between bg-gray600">
               <p className="text-gray500 text-center">
                 Estamos prontos para ser a bússola que guiará sua empresa por águas jurídicas complexas. 
                 Entre em contato conosco agora para descobrir como a LexPro pode impulsionar o sucesso e a 
@@ -21,7 +21,7 @@ export default function Contact () {
               </div>
             </section>
             <section className="gap-[8rem] flex flex-col items-center justify-center bg-gray900">
-                <div className="px-28 tablet:px-[8.5rem] mt-[-14rem] max-[600px]:w-full">
+                <div className="px-8 tablet:px-[8.5rem] mt-[-14rem] max-[600px]:w-full">
                   <FormContact />
                 </div>
 
