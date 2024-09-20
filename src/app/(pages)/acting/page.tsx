@@ -36,15 +36,15 @@ export default function Acting() {
             <Buttom title="Falar com um especialista"/>
           </div>
 
-          <img src="3.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+          <img src="5.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
 
         </div>
 
-        <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-12 w-full">
+        <div className="cell:flex-row flex flex-col-reverse cell:items-start items-center justify-between gap-12 w-full">
 
-        <img src="3.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+        <img src="6.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
           
-          <div className="flex justify-end w-full">
+          <div className="flex justify-end direction-alternate-reverse cell:w-full">
             <div className="flex flex-col cell:items-start items-center justify-center gap-10">
               <div className="cell:items-start flex flex-col items-center gap-3">
                 <SvgPerson/>
@@ -94,7 +94,7 @@ export default function Acting() {
             <Buttom title="Falar com um especialista"/>
           </div>
 
-          <img src="3.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
+          <img src="7.png" alt="mesa do tribunal" className="object-cover w-[50%] h-auto"/>
 
         </div>
       </section>
