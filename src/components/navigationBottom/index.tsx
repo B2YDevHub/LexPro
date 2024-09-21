@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from "react";
 import { NavLink } from "../header/navLink";
 import { Nav } from "../topBar";
 

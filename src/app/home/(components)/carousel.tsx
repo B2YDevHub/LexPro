@@ -9,7 +9,7 @@ interface CarouselProps extends ComponentProps<'div'> {
 
 export function Carousel ({children, ...props}: CarouselProps) {
 
-  const carousel = useRef<any>();
+  const carousel = useRef<HTMLDivElement>(null);
 
   const [ballsState, setBallsState] = useState(0)
 
@@ -29,9 +29,7 @@ export function Carousel ({children, ...props}: CarouselProps) {
     }
   };
 
-  const handleRightClick = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-  
+  function carouselRight () {
     if(carousel.current) {
       const width = carousel.current.scrollLeft += carousel.current.offsetWidth 
       const index =  Math.round(width / carousel.current.offsetWidth)
@@ -49,23 +47,11 @@ export function Carousel ({children, ...props}: CarouselProps) {
     }
   }
 
-  setInterval(function() {
-    if(carousel.current) {
-      const width = carousel.current.scrollLeft += carousel.current.offsetWidth 
-      const index =  Math.round(width / carousel.current.offsetWidth)
+  const handleRightClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
   
-      if(index > children.props.children.length - 1) {
-        setBallsState(0)
-
-        if(ballsState == 0) {
-          carousel.current.scrollLeft = 0
-        }
-        return
-      }
-
-      setBallsState(Math.round(width / carousel.current.offsetWidth))
-    }
-  }, 5000)
+    carouselRight()
+  }
 
   return (
     <div {...props} className="flex flex-col items-center justify-center gap-8 py-12 bg-brown400 w-full rounded-lg relative">

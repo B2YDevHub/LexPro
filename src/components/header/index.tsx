@@ -6,7 +6,7 @@ export function Header () {
   return (
     <header className="w-full flex justify-between items-center bg-gray800 py-[3.75rem] px-8 tablet:px-[8.5rem]">
       <img
-        src='/logoH.png'
+        src='logoH.png'
         className="w-[16.875rem]"
         alt="Logo"
       />

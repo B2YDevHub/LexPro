@@ -2,8 +2,8 @@
 
 import { useForm } from "react-hook-form";
 import { Buttom } from "../buttom";
-import { Input } from "../input";
-import { TextArea } from "../textArea";
+import Input from "../input";
+import TextArea  from "../textArea";
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup';
 import { toast } from "sonner";
@@ -11,7 +11,7 @@ import { toast } from "sonner";
 const formSchema = yup.object({
     name: yup.string().required('Informe o seu nome'),
     email: yup.string().email().required('Informe o seu email'),
-    phone: yup.number().integer().min(8, 'Tem que haver no minimo 8 caracteres').required('Informe o seu telefone'),
+    phone: yup.number().integer().min(8, 'Tem que haver no minimo 8 caracteres').typeError('Informe o seu telefone').required('Informe o seu telefone'),
     subject: yup.string().required('Informe o assunto'),
     message: yup.string().required('Informe uma mensagem'),
   });
