@@ -11,6 +11,8 @@ export function Carousel ({children, ...props}: CarouselProps) {
 
   const carousel = useRef<HTMLDivElement>(null);
 
+  const childrenLength = children.props.children.length
+
   const [ballsState, setBallsState] = useState(0)
 
   const handleLeftClick = (e: MouseEvent<HTMLButtonElement>) => {
@@ -21,11 +23,11 @@ export function Carousel ({children, ...props}: CarouselProps) {
       const index =  Math.round(width / carousel.current.offsetWidth)
 
       if(Math.sign(index) === -1) {
-        setBallsState(children.props.children.length - 1)
+        setBallsState(childrenLength - 1)
 
         console.log(Math.sign(index))
         
-        carousel.current.scrollLeft = carousel.current.offsetWidth * children.props.children.length - 1
+        carousel.current.scrollLeft = carousel.current.offsetWidth * childrenLength - 1
         
         return
       }
@@ -43,7 +45,7 @@ export function Carousel ({children, ...props}: CarouselProps) {
       const width = carousel.current.scrollLeft += carousel.current.offsetWidth 
       const index =  Math.round(width / carousel.current.offsetWidth)
   
-      if(index > children.props.children.length - 1) {
+      if(index > childrenLength - 1) {
         setBallsState(0)
 
         carousel.current.scrollLeft = 0
@@ -68,7 +70,7 @@ export function Carousel ({children, ...props}: CarouselProps) {
         </div>
       </div>
       <div className="flex items-center justify-between gap-4">
-        {Array.from({ length: children.props.children.length }).map((_, i) => {
+        {Array.from({ length: childrenLength }).map((_, i) => {
           return (
             <div key={i} className={`h-3 w-3 rounded-[100%] ${i === ballsState ? `bg-brown500` : `bg-gray600`}`}></div>
           )
