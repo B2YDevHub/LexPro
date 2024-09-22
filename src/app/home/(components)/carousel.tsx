@@ -20,16 +20,25 @@ export function Carousel ({children, ...props}: CarouselProps) {
       const width = carousel.current.scrollLeft -= carousel.current.offsetWidth 
       const index =  Math.round(width / carousel.current.offsetWidth)
 
-      if(Math.sign(index) === -1 || Math.sign(index) === -0) {
-        setBallsState(0)
+      if(Math.sign(index) === -1) {
+        setBallsState(2)
+
+        console.log(Math.sign(index))
+        
+        carousel.current.scrollLeft = carousel.current.offsetWidth * 2
+        
         return
       }
 
-      setBallsState((prevState) => prevState + index)
+      console.log(index)
+
+      setBallsState(index)
     }
   };
 
-  function carouselRight () {
+  const handleRightClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+  
     if(carousel.current) {
       const width = carousel.current.scrollLeft += carousel.current.offsetWidth 
       const index =  Math.round(width / carousel.current.offsetWidth)
@@ -37,20 +46,12 @@ export function Carousel ({children, ...props}: CarouselProps) {
       if(index > children.props.children.length - 1) {
         setBallsState(0)
 
-        if(ballsState == 0) {
-          carousel.current.scrollLeft = 0
-        }
+        carousel.current.scrollLeft = 0
         return
       }
 
-      setBallsState(Math.round(width / carousel.current.offsetWidth))
+      setBallsState(index)
     }
-  }
-
-  const handleRightClick = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-  
-    carouselRight()
   }
 
   return (
