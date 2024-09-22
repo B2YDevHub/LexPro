@@ -21,11 +21,11 @@ export function Carousel ({children, ...props}: CarouselProps) {
       const index =  Math.round(width / carousel.current.offsetWidth)
 
       if(Math.sign(index) === -1) {
-        setBallsState(2)
+        setBallsState(children.props.children.length - 1)
 
         console.log(Math.sign(index))
         
-        carousel.current.scrollLeft = carousel.current.offsetWidth * 2
+        carousel.current.scrollLeft = carousel.current.offsetWidth * children.props.children.length - 1
         
         return
       }

@@ -229,6 +229,51 @@ export default function Home() {
                  <span className="text-xl text-brown600 ">CEO, Tech Innovate Solutions</span>
               </div>
             </div>
+
+            
+            <div className='flex flex-col items-center justify-center gap-6 min-w-full'>
+              <p className="text-[1.75rem] text-center w-[60%]">
+                “A LexPro foi essencial para nossa empresa, 
+                oferecendo consultoria jurídica estratégica impecável. 
+                Profissionais dedicados e soluções personalizadas fazem 
+                da LexPro nossa escolha confiável em questões legais.”
+              </p>
+
+              <div className="flex flex-col items-center justify-center">
+                 <h2 className="text-[1.75rem] font-semibold">Eduardo Silva</h2>
+                 <span className="text-xl text-brown600 ">CEO, Tech Innovate Solutions</span>
+              </div>
+            </div>
+
+            
+            <div className='flex flex-col items-center justify-center gap-6 min-w-full'>
+              <p className="text-[1.75rem] text-center w-[60%]">
+                “A LexPro foi essencial para nossa empresa, 
+                oferecendo consultoria jurídica estratégica impecável. 
+                Profissionais dedicados e soluções personalizadas fazem 
+                da LexPro nossa escolha confiável em questões legais.”
+              </p>
+
+              <div className="flex flex-col items-center justify-center">
+                 <h2 className="text-[1.75rem] font-semibold">Eduardo Silva</h2>
+                 <span className="text-xl text-brown600 ">CEO, Tech Innovate Solutions</span>
+              </div>
+            </div>
+
+            
+            <div className='flex flex-col items-center justify-center gap-6 min-w-full'>
+              <p className="text-[1.75rem] text-center w-[60%]">
+                “A LexPro foi essencial para nossa empresa, 
+                oferecendo consultoria jurídica estratégica impecável. 
+                Profissionais dedicados e soluções personalizadas fazem 
+                da LexPro nossa escolha confiável em questões legais.”
+              </p>
+
+              <div className="flex flex-col items-center justify-center">
+                 <h2 className="text-[1.75rem] font-semibold">Eduardo Silva</h2>
+                 <span className="text-xl text-brown600 ">CEO, Tech Innovate Solutions</span>
+              </div>
+            </div>
           </div>
         </Carousel>
       </section>
