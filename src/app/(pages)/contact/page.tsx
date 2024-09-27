@@ -1,4 +1,4 @@
-import { Card } from "./(components)/card";
+import { Card } from "../../../components/viewComponents/cardContact";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt  } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";

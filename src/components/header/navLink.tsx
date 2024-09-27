@@ -16,7 +16,7 @@ export function NavLink ({side, align}: NavLinkProps) {
     return (
       <>
         <nav className="tablet:flex hidden items-center flex-1 justify-evenly max-w-[50rem]">
-          <Link href="home" className={`text-4 font-bold uppercase hover:text-brown400 ${path == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+          <Link href="/" className={`text-4 font-bold uppercase hover:text-brown400 ${path == '/' ? 'text-brown400' : 'text-gray500' } transition-all`}>
             Home
           </Link>
           <Link href="office" className={`text-4 text-nowrap font-bold uppercase hover:text-brown400 ${path == '/office' ? 'text-brown400' : 'text-gray500' } transition-all`}>
@@ -41,7 +41,7 @@ export function NavLink ({side, align}: NavLinkProps) {
             <DropdownMenu.Content className="tablet:hidden z-20 bg-gray800 rounded space-y-4 px-2 py-4 mt-5 -mr-5" side={side} align={align}>
 
               <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="home" className={`text-3 font-bold uppercase hover:text-brown400 ${path == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+                <Link href="/" className={`text-3 font-bold uppercase hover:text-brown400 ${path == '/' ? 'text-brown400' : 'text-gray500' } transition-all`}>
                   Home
                 </Link>
               </DropdownMenu.Item>

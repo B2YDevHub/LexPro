@@ -1,5 +1,5 @@
-import { Tag } from "@/app/home/(components)/tag";
-import { HeaderHome } from "../../home/(components)/headerHome";
+import { Tag } from "@/components/viewComponents/tag";
+import { HeaderHome } from "../../../components/viewComponents/headerHome";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 
