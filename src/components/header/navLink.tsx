@@ -15,7 +15,7 @@ export function NavLink ({side, align}: NavLinkProps) {
   const path = usePathname()
     return (
       <>
-        <nav className="tablet:flex hidden items-center flex-1 justify-evenly max-w-[50rem]">
+        <nav className="header:flex hidden items-center flex-1 justify-evenly max-w-[50rem]">
           <Link href="/" className={`text-4 font-bold uppercase hover:text-brown400 ${path == '/' ? 'text-brown400' : 'text-gray500' } transition-all`}>
             Home
           </Link>
@@ -31,14 +31,14 @@ export function NavLink ({side, align}: NavLinkProps) {
         </nav>
 
         <DropdownMenu.Root modal={false}>
-          <DropdownMenu.Trigger className="tablet:hidden" asChild>
+          <DropdownMenu.Trigger className="header:hidden" asChild>
             <button className="text-white">
               <RxHamburgerMenu className="size-6"/>
             </button>
           </DropdownMenu.Trigger>
 
           <DropdownMenu.Portal>
-            <DropdownMenu.Content className="tablet:hidden z-20 bg-gray800 rounded space-y-4 px-2 py-4 mt-5 -mr-5" side={side} align={align}>
+            <DropdownMenu.Content className="header:hidden z-20 bg-gray800 rounded space-y-4 px-2 py-4 mt-5 -mr-5" side={side} align={align}>
 
               <DropdownMenu.Item className="DropdownMenuItem">
                 <Link href="/" className={`text-3 font-bold uppercase hover:text-brown400 ${path == '/' ? 'text-brown400' : 'text-gray500' } transition-all`}>

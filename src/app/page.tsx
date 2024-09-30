@@ -22,7 +22,7 @@ export default function Home() {
             Sua Empresa protegida,  crescimento garantido!
           </h1>
 
-          <p className="cell:text-start text-center text-brown400 max-w-[50rem] text-[1.25rem] font-medium font-inter">
+          <p className="cell:text-start text-justify text-brown400 max-w-[50rem] text-[1.25rem] font-medium font-inter">
             Alavanque seus negócios com nossa expertise jurídica  
             sob medida.Simplificamos a conformidade legal para 
             que você possa focar no crescimento.
@@ -40,7 +40,6 @@ export default function Home() {
       </section>
 
       <section className="py-12 w-full cell:block flex flex-col items-center justify-center px-8 tablet:px-[8.5rem] bg-gray600 relative">
-        <div className="absolute top-[5rem] left-[-15rem] w-[30rem] h-[30rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
         <HeaderHome title="Atuação" subTitle="áreas de"/>
 
         <div className="cell:flex-row flex flex-col w-full items-center justify-between mt-20 gap-[1.87rem]">
@@ -68,8 +67,8 @@ export default function Home() {
           </Card>
         </div>
 
-        <div className="cell:flex grid grid-cols-1 items-center justify-between gap-11 mt-24">
-          <img className="object-cover cell:w-auto w-full h-auto" src="2.png" alt="Imagem de um advogado" />
+        <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-11 mt-24">
+          <img className="object-cover cell:w-[50%] cell:h-[70vh]" src="2.png" alt="Imagem de um advogado" />
 
           <div className="flex flex-col cell:items-start items-center justify-center  gap-12">
             <div className="cell:block flex flex-col items-center">
@@ -77,7 +76,7 @@ export default function Home() {
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
             </div>
 
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[50rem]">
+            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-justify max-w-[50rem]">
               A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender 
               às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização 
               em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada 
@@ -233,14 +232,14 @@ export default function Home() {
         </Carousel>
       </section>
 
-      <section className="py-[7.5rem] px-8 tablet:px-[8.5rem] gap-[6rem] cell:flex-row flex flex-col items-center justify-between bg-gray900">
-          <div className="flex flex-col cell:items-start items-center justify-center gap-14 w-full">
-            <div className="cell:block flex flex-col items-center">
+      <section className="py-[7.5rem] px-8 tablet:px-[8.5rem] gap-[6rem] form:flex-row flex flex-col items-center justify-between bg-gray900">
+          <div className="flex flex-col form:items-start items-center justify-center gap-14 w-full">
+            <div className="form:block flex flex-col items-center">
               <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
             </div>
 
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[50rem]">
+            <p className="text-base font-normal font-inter text-gray500 form:text-start text-justify max-w-[50rem]">
               A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender 
               às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização 
               em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada 

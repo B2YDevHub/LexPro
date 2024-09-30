@@ -7,11 +7,9 @@ import { FormContact } from "@/components/formContact";
 export default function Contact () {
     return (
         <div className="relative">
-          <div className="absolute top-[1rem] left-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
-          <div className="absolute top-[1rem] right-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
           
             <section className="py-20 px-8 tablet:px-[8.5rem] gap-[8rem] flex flex-col items-center justify-between bg-gray600">
-              <p className="text-gray500 text-center">
+              <p className="text-gray500 cell:text-center text-justify">
                 Estamos prontos para ser a bússola que guiará sua empresa por águas jurídicas complexas. 
                 Entre em contato conosco agora para descobrir como a LexPro pode impulsionar o sucesso e a 
                 segurança jurídica de sua empresa. Sua jornada para o sucesso começa aqui.

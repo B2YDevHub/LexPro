@@ -30,6 +30,8 @@ const config: Config = {
   		bgButton: 'hsl(var(--bg-button))'
   	},
   	screens: {
+		header: '850px',
+		form: '800px',
   		tablet: '750px',
   		cell: '600px'
   	},

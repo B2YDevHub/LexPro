@@ -10,7 +10,7 @@ export function TopBar () {
                     <FaLocationDot className="fill-brown400 size-5"/>
                     <p className="text-[1rem] font-medium text-gray500">Rua 987, St. Pedro, Goiânia-GO.</p>
                 </span>
-                <span className="text-nowrap flex items-center space-x-2.5">
+                <span className="max-[450px]:hidden text-nowrap flex items-center space-x-2.5">
                     <FaPhoneAlt className="fill-brown400 size-5"/>
                     <p className="text-[1rem] font-medium text-gray500">+55 62 98765-4321</p>
                 </span>
@@ -27,15 +27,15 @@ export function TopBar () {
 
 export const Nav = () => {
     return (
-        <nav className="flex items-center space-x-4">
+        <nav className="max-[450px]:flex-1 max-[450px]:space-x-12 flex items-center justify-end space-x-4">
             <a href="">
-            <FaInstagram className="fill-brown400 size-5"/>
+            <FaInstagram className="fill-brown400 size-5 hover:scale-125 transition-all"/>
             </a>
             <a href="">
-            <FaYoutube className="fill-brown400 size-5"/>
+            <FaYoutube className="fill-brown400 size-5 hover:scale-125 transition-all"/>
             </a>
             <a href="">
-            <FaLinkedin className="fill-brown400 size-5"/>
+            <FaLinkedin className="fill-brown400 size-5 hover:scale-125 transition-all"/>
             </a>
        </nav>  
     )

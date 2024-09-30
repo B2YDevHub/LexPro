@@ -83,4 +83,10 @@ html {
   @media (max-width: 850px) {
     font-size: 65%;
   }
+  @media (max-width: 850px) {
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
 }    

@@ -10,8 +10,6 @@ export default function Acting() {
   return (
     <div>
       <section className="py-20 px-8 tablet:px-[8.5rem] gap-[8rem] flex flex-col items-center justify-between bg-gray600 relative">
-        <div className="absolute top-[1rem] left-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
-        <div className="absolute top-[1rem] right-[-15rem] w-[20rem] h-[20rem] opacity-50 blur-[125px] rounded-br-[100%] bg-gray500"></div>
 
         <div className="cell:flex-row flex flex-col cell:items-start items-center justify-between gap-20 w-full">
           <div className="flex flex-col cell:items-start items-center justify-center gap-10 w-full">
@@ -22,7 +20,7 @@ export default function Acting() {
                 <h1 className="text-[1.75rem] text-white font-bold leading-6">Jurídica</h1>
               </div>
             </div>
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
+            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-justify max-w-[40rem]">
                A LexPro Consultoria Jurídica foi fundada por um grupo de profissionais altamente qualificados e experientes no campo jurídico, 
               unidos por uma visão compartilhada de fornecer serviços jurídicos inovadores e estratégicos para empresas.<br />
               <br />
@@ -53,7 +51,7 @@ export default function Acting() {
                   <h1 className="text-[1.75rem] text-white font-bold leading-6">Jurídica</h1>
                 </div>
               </div>
-              <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
+              <p className="text-base font-normal font-inter text-gray500 cell:text-start text-justify max-w-[40rem]">
                 A LexPro Consultoria Jurídica foi fundada por um grupo de profissionais altamente qualificados e experientes no campo jurídico, 
                 unidos por uma visão compartilhada de fornecer serviços jurídicos inovadores e estratégicos para empresas.<br />
                 <br />
@@ -80,7 +78,7 @@ export default function Acting() {
                 <h1 className="text-[1.75rem] text-white font-bold leading-6">Jurídica</h1>
               </div>
             </div>
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
+            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-justify max-w-[40rem]">
                A LexPro Consultoria Jurídica foi fundada por um grupo de profissionais altamente qualificados e experientes no campo jurídico, 
               unidos por uma visão compartilhada de fornecer serviços jurídicos inovadores e estratégicos para empresas.<br />
               <br />
@@ -99,14 +97,14 @@ export default function Acting() {
         </div>
       </section>
           
-      <section className="py-[7.5rem] px-8 tablet:px-[8.5rem] gap-[6rem] cell:flex-row flex flex-col items-center justify-between bg-gray900">
-          <div className="flex flex-col cell:items-start items-center justify-center gap-14 w-full">
-            <div className="cell:block flex flex-col items-center">
+      <section className="py-[7.5rem] px-8 tablet:px-[8.5rem] gap-[6rem] form:flex-row flex flex-col items-center justify-between bg-gray900">
+          <div className="flex flex-col form:items-start items-center justify-center gap-14 w-full">
+            <div className="form:block flex flex-col items-center">
               <span className="text-2xl font-bold text-brown400 uppercase">conheça nosso</span>
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
             </div>
 
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[50rem]">
+            <p className="text-base font-normal font-inter text-gray500 form:text-start text-justify max-w-[50rem]">
               A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender 
               às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização 
               em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada 
